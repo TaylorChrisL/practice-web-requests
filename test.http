@@ -1,0 +1,13 @@
+GET https://github.com/actualize-chi-2022-05
+
+###
+
+GET http://google.com
+
+###
+
+GET http://developer.mozilla.org/en-US/Web/HTTP/Methods
+
+###
+
+GET http://data.cityofchicago.org/resource/xzkq-xp2w.json
