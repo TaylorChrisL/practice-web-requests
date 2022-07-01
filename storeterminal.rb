@@ -7,7 +7,7 @@ prompt = TTY::Prompt.new
 table = TTY::Table.new
 table << ["Name", "Description"]
 
-response = HTTP.get("http://localhost:3000/products_path").parse(:json)
+response = HTTP.get("http://localhost:3000/products").parse(:json)
 
 puts "Welcome to 'The Exotic Animal' store"
 puts
@@ -35,6 +35,7 @@ end
 
 input = input - 1
 
+system "clear"
 puts "#{response[input]["name"]} - $#{response[input]["price"]}"
 puts response[input]["description"]
 puts TTY::Link.link_to("#{response[input]["name"]} link", "#{response[input]["image_url"]}")
